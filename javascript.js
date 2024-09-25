@@ -111,5 +111,5 @@ const userMale = true;
 
 //your code here
 
-const userTitle = userMale === false ? "this if true" : "this if not true";
+const userTitle = userMale === false ? "Mrs." : "Mr.";
 console.log(userTitle);
