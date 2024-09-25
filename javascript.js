@@ -29,6 +29,14 @@ Try to use both the let and const keywords
 ******************************************************************************/
 
 //your code here
+const studentName = "Himanshu";
+let studentAge = 6;
+let studentIntrests = ["Dance", "running", "chess", "music", "swimming"];
+let skoleStudent = true;
+console.log(studentName);
+console.log(studentIntrests);
+console.log(studentIntrests[3]);
+console.log(skoleStudent);
 
 /****************************************************************************** 
 ASSIGNMENT 3
@@ -38,6 +46,17 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+let x = 4;
+let y = x + 6;
+
+console.log(y);
+console.log(y / x);
+x += y;
+console.log(x);
+x++;
+console.log(x);
+y -= 2;
+console.log(y);
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -57,14 +76,24 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
+const userName = " ";
 let userAge = 18;
 let userIsLoggedIn = false;
-let userIsBlocked = false;
+const userIsBlocked = false;
 let goToPage = "";
 
 //your code here
 
+if (userName === " " && userAge >= 18 && userIsBlocked === false) {
+  userIsLoggedIn = true;
+  goToPage = "/Home";
+  console.log("Welcome To Home page");
+} else {
+  console.log("User feild to loggedin");
+}
+
+console.log(userIsLoggedIn);
+console.log(goToPage);
 /******************************************************************************
 ASSIGNMENT 5
 
@@ -78,6 +107,9 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 ******************************************************************************/
 
-const userMale = false;
+const userMale = true;
 
 //your code here
+
+const userTitle = userMale === false ? "this if true" : "this if not true";
+console.log(userTitle);
